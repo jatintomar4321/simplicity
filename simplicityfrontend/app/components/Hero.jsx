@@ -23,7 +23,7 @@ export default function Hero() {
       <section className="mx-auto w-full px-6 py-4 sm:px-8 md:px-16 lg:px-24">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28">
           {/* Left Column */}
-          <div className="space-y-8 text-center lg:text-left lg:max-w-[50rem]">
+          <div className="space-y-8 text-left lg:text-left lg:max-w-[50rem]">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-[#2D2D2D]">
               <span className="font-semibold">Simplicity</span> is powerful
             </h1>
