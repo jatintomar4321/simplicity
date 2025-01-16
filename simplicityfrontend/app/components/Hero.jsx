@@ -32,7 +32,7 @@ export default function Hero() {
             </p>
             {/* CTA Button with gradient border */}
             <div className="relative inline-block group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-200 to-cyan-200 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#FFF350]  to-[#00E6F2] rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <button className="relative font-medium leading-tight tracking-tighter text-xs sm:text-sm px-6 py-2 bg-white rounded-md text-[#1E1E1E] flex items-center">
                 Book your Session
               </button>

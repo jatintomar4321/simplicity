@@ -15,28 +15,29 @@ export default function WeOffer() {
         </p>
         
         {/* Custom Toggle Switch */}
-        <div className="inline-flex items-center rounded-full  border px-1 py-1 bg-white shadow-sm">
-          <button
-            onClick={() => setActiveService('marketing')}
-            className={`px-4 py-2 rounded-full text-xs sm:text-xs transition-all ${
-              activeService === 'marketing' 
-                ? 'bg-gradient-to-r from-yellow-200 to-cyan-200 text-gray-800' 
-                : 'hover:bg-gray-100 text-gray-600 '
-            }`}
-          >
-            Marketing Consultancy
-          </button>
-          <button
-            onClick={() => setActiveService('executive')}
-            className={`px-4 py-2 rounded-full text-xs sm:text-xs transition-all ${
-              activeService === 'executive' 
-                ? 'bg-gradient-to-r from-yellow-200 to-cyan-200 text-gray-800' 
-                : 'hover:bg-gray-100 text-gray-600'
-            }`}
-          >
-            Executive Coaching
-          </button>
-        </div>
+        <div className="inline-flex items-center rounded-full border px-1 py-1 bg-white shadow-sm">
+  <button
+    onClick={() => setActiveService('marketing')}
+    className={`px-2 py-1 rounded-full text-[0.65rem] transition-all sm:px-3 sm:py-2 sm:text-xs ${
+      activeService === 'marketing'
+        ? 'bg-gradient-to-r from-[#FFF350] to-[#00E6F2] text-gray-800'
+        : 'hover:bg-gray-100 text-gray-600'
+    }`}
+  >
+    Marketing Consultancy
+  </button>
+  <button
+    onClick={() => setActiveService('executive')}
+    className={`px-2 py-1 rounded-full text-[0.65rem] transition-all sm:px-3 sm:py-2 sm:text-xs ${
+      activeService === 'executive'
+        ? 'bg-gradient-to-r from-[#FFF350] to-[#00E6F2] text-gray-800'
+        : 'hover:bg-gray-100 text-gray-600'
+    }`}
+  >
+    Executive Coaching
+  </button>
+</div>
+
       </div>
 
       {/* Content Section */}
