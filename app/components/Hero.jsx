@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { 
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -24,10 +24,10 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28">
           {/* Left Column */}
           <div className="space-y-8 text-left lg:text-left lg:max-w-[50rem]">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-[#2D2D2D]">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-[#2D2D2D]">
               <span className="font-semibold">Simplicity</span> is powerful
             </h1>
-            <p className="text-base sm:text-lg md:text-md lg:text-md text-gray-600">
+            <p className="text-base sm:text-lg md:text-md tracking-tight lg:text-md text-gray-600">
               Welcome to The Simple Thing, a company founded with a singular belief: simplicity is powerful. In a world that celebrates the complex, we help you find 'your' simple.
             </p>
             {/* CTA Button with gradient border */}
