@@ -6,16 +6,18 @@ import { About } from './components/About'
 import { ThreeBoxes } from './components/ThreeBoxes'
 import { Gradient } from './components/Gradient'
 import { Testimonials } from './components/Testimonials'
+import { Card } from './components/Card'
 
 export default function Home() {
   return (
-    <main>
+      <>
       <Navbar />
-      <Hero />
-      <WeOffer />
-      <Banner/>
-      <About/>
-      <ThreeBoxes
+      <main className="pt-[calc(2rem+4rem)]"> {/* Adjust based on your navbar height */}
+        <Hero />
+        <WeOffer />
+        <Banner />
+        <About />
+        <ThreeBoxes
         heading = "Why we choose Simple things?"
         h1 = "The Simple Thing offers two distinct yet interconnected services"
         box1H ="Proven Expertise"
@@ -36,7 +38,11 @@ export default function Home() {
         h3 ="Solutions and strategies customised to your unique needs"
         h4 ="We craft strategies, solutions, and plans that are clear, actionable, and effective"
       />
-      <Testimonials/>
-    </main>
+        
+        <Testimonials />
+        <Card/>
+      </main>
+    </>
+  
   )
 }

@@ -1,7 +1,23 @@
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
 
 export default function Sidebar({ isOpen, onClose }) {
+  useEffect(() => {
+    if (isOpen) {
+      // Disable scrolling on the body
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Re-enable scrolling on the body
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function to re-enable scrolling when component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
     <motion.div
       initial={{ x: "100%" }}
@@ -12,7 +28,7 @@ export default function Sidebar({ isOpen, onClose }) {
       <div className="min-h-screen flex flex-col p-6 pt-40">
         {/* Navigation Links */}
         <nav className="flex-1">
-          <ul className=" text-[2.5rem] font-semibold">
+          <ul className="text-[2.5rem] font-semibold space-y-4">
             <li>
               <a href="/" className="hover:opacity-70 transition-opacity">
                 Home
@@ -44,19 +60,21 @@ export default function Sidebar({ isOpen, onClose }) {
         {/* Footer */}
         <div className="mt-auto space-y-6">
           {/* Social Links */}
-          <div className="flex gap-6">
-            <a href="#" className="hover:opacity-70 transition-opacity">
-              <Twitter className="w-6 h-6" />
+          <div className="flex gap-2">
+            <a href="#" className="hover:opacity-70 transition-opacity" aria-label="Twitter">
+              <Twitter className="w-4 h-4" />
             </a>
-            <a href="#" className="hover:opacity-70 transition-opacity">
-              <Facebook className="w-6 h-6" />
+            <a href="#" className="hover:opacity-70 transition-opacity" aria-label="Facebook">
+              <Facebook className="w-4 h-4" />
             </a>
-            <a href="#" className="hover:opacity-70 transition-opacity">
-              <Instagram className="w-6 h-6" />
+            <a href="#" className="hover:opacity-70 transition-opacity" aria-label="Instagram">
+              <Instagram className="w-4 h-4" />
             </a>
-            <a href="#" className="hover:opacity-70 transition-opacity">
-              <Youtube className="w-6 h-6" />
+            <a href="#" className="hover:opacity-70 transition-opacity" aria-label="YouTube">
+              <Youtube className="w-4 h-4" />
             </a>
+            
+            
           </div>
           {/* Copyright */}
           <div className="text-sm space-y-1">

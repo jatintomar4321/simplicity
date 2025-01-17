@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
-import { motion } from 'framer-motion';
+import { animate, motion } from 'framer-motion';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +10,10 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const transition = { type: "spring",
+    stiffness: 500,
+    damping: 10}
 
   return (
     <header className="w-full text-[#241201]">
@@ -44,18 +48,20 @@ export default function Navbar() {
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
         >
-          <motion.div className="space-y-1.5 w-6 h-6 flex flex-col justify-center items-center">
+          <motion.div className="space-y-1.5  w-6 h-6 flex flex-col justify-center items-center">
             <motion.span
-              animate={isMenuOpen ? { rotate: 50, y: 6 } : { rotate: 0, y: 0 }}
-              className="block w-6 h-0.5 bg-current origin-center"
+              animate={isMenuOpen ? { rotate: 50, y: 6}: { rotate: 0, y: 0 }}
+              transition={transition}
+              className="block w-6 h-0.5 bg-current duration-75  origin-center"
             ></motion.span>
             <motion.span
               animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
               className="block w-6 h-0.5 bg-current"
             ></motion.span>
             <motion.span
-              animate={isMenuOpen ? { rotate: -50, y: -10 } : { rotate: 0, y: 0 }}
-              className="block w-6 h-0.5 bg-current origin-center"
+              animate={isMenuOpen ? { rotate: -50, y: -10  } : { rotate: 0, y: 0 }}
+              transition={transition}
+              className="block w-6 h-0.5 bg-current duration-75  origin-center"
             ></motion.span>
           </motion.div>
         </button>

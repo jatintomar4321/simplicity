@@ -6,7 +6,7 @@ export default function WeOffer() {
   const [activeService, setActiveService] = useState('marketing')
 
   return (
-    <section className="mx-auto max-w-7xl px-6 py-16 sm:px-8 md:px-12 lg:px-16">
+    <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:px-12 lg:px-16">
       {/* Header */}
       <div className="text-center space-y-3 pb-14">
         <h2 className="text-3xl sm:text-4xl font-medium text-[#241201]">What we offer</h2>
@@ -41,7 +41,7 @@ export default function WeOffer() {
       </div>
 
       {/* Content Section */}
-      <div className="bg-gray-50 rounded-2xl px-6 sm:px-8 md:px-12 lg:px-16 py-6 sm:py-6 md:py-10 lg:py-12 lg:mx-32 max-w-screen-xl text-xs sm:text-xs">
+      <div className="bg-gray-50 rounded-2xl px-5 sm:px-8 md:px-12 lg:px-16 py-6 sm:py-6 md:py-10 lg:py-12 lg:mx-32 max-w-screen-xl text-xs sm:text-xs">
         <div className="space-y-3 mb-12">
           <p className="text-gray-600 font-semibold">Lorem ipsum</p>
           <h3 className="text-2xl sm:text-2xl font-semibold  text-[#2D2D2D]">
