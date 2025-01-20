@@ -1,0 +1,21 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./app/components/style.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_paragraph__EF03z {
+  display: flex;
+  line-height: 0.7;
+  padding: 40px;
+  max-width: 50rem;
+  color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  align-items: start;
+}
+.style_paragraph__EF03z .style_word__oWXUB {
+  position: relative;
+  margin-right: 12px;
+  margin-top: 12px;
+}
+.style_paragraph__EF03z .style_word__oWXUB .style_shadow__OJ96y {
+  position: absolute;
+  opacity: 20%;
+}

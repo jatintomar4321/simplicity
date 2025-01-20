@@ -1,3 +1,5 @@
+'use client'
+
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import WeOffer from './components/WeOffer'
@@ -10,7 +12,13 @@ import { Card } from './components/Card'
 import GetInTouch from './components/GetInTouch'
 import Footer from './components/Footer'
 
+import Character from './components/Character';
+
+const paragraph = "Whether you are a brand striving for clarity or an individual seeking purpose, we believe that the right kind of simplicity can drive transformation."
+
+
 export default function Home() {
+  const words = paragraph.split(" ")
   return (
       <>
       <Navbar />
@@ -29,7 +37,7 @@ export default function Home() {
         h3 ="Solutions and strategies customised to your unique needs"
         h4 ="A philosophy that transforms complexities into actionable clarity"
       />
-      <Gradient/>
+      <Character paragraph={paragraph}  />
       <ThreeBoxes
          heading = "How we work"
         h1 = "Whether it’s a one-off consultation or a long-term engagement,our approach is designed to empower."
@@ -45,6 +53,8 @@ export default function Home() {
         <Card/>
         <GetInTouch/>
         <Footer/>
+        
+        
       </main>
     </>
   
