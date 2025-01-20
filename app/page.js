@@ -7,6 +7,8 @@ import { ThreeBoxes } from './components/ThreeBoxes'
 import { Gradient } from './components/Gradient'
 import { Testimonials } from './components/Testimonials'
 import { Card } from './components/Card'
+import GetInTouch from './components/GetInTouch'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -41,6 +43,8 @@ export default function Home() {
         
         <Testimonials />
         <Card/>
+        <GetInTouch/>
+        <Footer/>
       </main>
     </>
   

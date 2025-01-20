@@ -103,7 +103,7 @@ export function Testimonials() {
         {testimonials.map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-1 rounded-full transition-colors ${
+            className={`w-1 h-1 rounded-full transition-colors ${
               index === selectedIndex ? 'bg-gray-800' : 'bg-gray-400'
             }`}
             aria-label={`Go to slide ${index + 1}`}

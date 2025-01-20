@@ -5,26 +5,37 @@ import { Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
 export default function Sidebar({ isOpen, onClose }) {
   useEffect(() => {
     if (isOpen) {
-      // Disable scrolling on the body
       document.body.style.overflow = 'hidden';
     } else {
-      // Re-enable scrolling on the body
       document.body.style.overflow = 'unset';
     }
 
-    // Cleanup function to re-enable scrolling when component unmounts
     return () => {
       document.body.style.overflow = 'unset';
     };
   }, [isOpen]);
 
+  const sidebarVariants = {
+    closed: { clipPath: 'circle(5% at 110% 15%)' },
+    open: { clipPath: 'circle(150% at 100% 0)' },
+  };
+
   return (
     <motion.div
-      initial={{ x: "100%" }}
-      animate={{ x: isOpen ? 0 : "100%" }}
-      transition={{ type: "tween", duration: 0.3 }}
-      className="fixed top-0 right-0 w-full h-full bg-[#FFF350] z-[100] overflow-y-auto"
+      initial="closed"
+      animate={isOpen ? "open" : "closed"}
+      variants={sidebarVariants}
+      transition={{ type: "tween", duration: 0.5 }}
+      className="fixed top-0 right-0 w-full h-full text-black bg-[#FFF350] z-40 overflow-y-auto"
     >
+      <svg className="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
+        <defs>
+          <clipPath id="sidebarClip" clipPathUnits="objectBoundingBox">
+            <path d="M0.7,0 C0.3,0 0,0.3 0,0.7 V1 H1 V0 Z" />
+          </clipPath>
+        </defs>
+      </svg>
+
       <div className="min-h-screen flex flex-col p-6 pt-40">
         {/* Navigation Links */}
         <nav className="flex-1">
@@ -73,8 +84,6 @@ export default function Sidebar({ isOpen, onClose }) {
             <a href="#" className="hover:opacity-70 transition-opacity" aria-label="YouTube">
               <Youtube className="w-4 h-4" />
             </a>
-            
-            
           </div>
           {/* Copyright */}
           <div className="text-sm space-y-1">

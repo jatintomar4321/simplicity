@@ -9,7 +9,7 @@ export function About() {
             <img
               src="founder.png"
               alt="Portrait of Samyukta Ganesh Iyer"
-              fill
+              
               className="object-cover "
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
