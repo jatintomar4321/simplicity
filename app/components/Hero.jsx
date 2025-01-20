@@ -25,7 +25,7 @@ export default function Hero() {
           {/* Left Column */}
           <div className="space-y-8 text-left lg:text-left lg:max-w-[50rem]">
             <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-[#2D2D2D]">
-              <span className="font-semibold">Simplicity</span> is powerful
+              <span className="font-semibold">Simplicity</span> is Powerful
             </h1>
             <p className="text-base sm:text-lg md:text-md tracking-tight lg:text-md text-gray-600">
               Welcome to The Simple Thing, a company founded with a singular belief: simplicity is powerful. In a world that celebrates the complex, we help you find 'your' simple.

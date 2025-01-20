@@ -20,7 +20,7 @@ export default function GetInTouch() {
 
   return (
     <div>
-      <section className="mx-auto w-full px-5 py-4 sm:px-8 md:px-16 lg:px-24">
+      <section className="mx-auto w-full px-5 pt-4 sm:px-8 md:px-16 lg:px-24">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28">
           {/* Left Column */}
         

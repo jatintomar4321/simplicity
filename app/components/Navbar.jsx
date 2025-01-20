@@ -14,7 +14,7 @@ export default function Navbar() {
   const transition = { 
     type: "spring",
     stiffness: 500,
-    damping: 10
+    damping: 20
   };
 
   return (
@@ -55,7 +55,7 @@ export default function Navbar() {
             >
               <motion.div className="space-y-1.5 w-6 h-6 flex flex-col justify-center items-center">
                 <motion.span
-                  animate={isMenuOpen ? { rotate: 50, y: 6}: { rotate: 0, y: 0 }}
+                  animate={isMenuOpen ? { rotate: 48, y: 6}: { rotate: 0, y: 0 }}
                   transition={transition}
                   className="block w-6 h-0.5 bg-current duration-75 origin-center"
                 ></motion.span>
@@ -64,7 +64,7 @@ export default function Navbar() {
                   className="block w-6 h-0.5 bg-current"
                 ></motion.span>
                 <motion.span
-                  animate={isMenuOpen ? { rotate: -50, y: -10 } : { rotate: 0, y: 0 }}
+                  animate={isMenuOpen ? { rotate: -48, y: -10 } : { rotate: 0, y: 0 }}
                   transition={transition}
                   className="block w-6 h-0.5 bg-current duration-75 origin-center"
                 ></motion.span>

@@ -74,7 +74,7 @@ export function ThreeBoxes({heading, h1, box1H, box2H, box3H, h2, h3, h4}) {
             <h3 className="text-sm font-semibold text-[#2D2D2D] mb-2">
               {box1H}
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#898989] text-center">
               {h2}
             </p>
           </div>
@@ -86,7 +86,7 @@ export function ThreeBoxes({heading, h1, box1H, box2H, box3H, h2, h3, h4}) {
             <h3 className="text-sm font-semibold text-[#2D2D2D] mb-2">
               {box1H}
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#898989] text-center">
               {h2}
             </p>
           </div>
@@ -105,7 +105,7 @@ export function ThreeBoxes({heading, h1, box1H, box2H, box3H, h2, h3, h4}) {
             <h3 className="text-sm font-semibold text-[#2D2D2D] mb-2">
               {box2H}
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#898989] text-center">
               {h3}
             </p>
           </div>
@@ -117,7 +117,7 @@ export function ThreeBoxes({heading, h1, box1H, box2H, box3H, h2, h3, h4}) {
             <h3 className="text-sm font-semibold text-[#2D2D2D] mb-2">
               {box2H}
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#898989] text-center">
               {h3}
             </p>
           </div>
@@ -136,7 +136,7 @@ export function ThreeBoxes({heading, h1, box1H, box2H, box3H, h2, h3, h4}) {
             <h3 className="text-sm font-semibold text-[#2D2D2D] mb-2">
               {box3H}
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#898989] text-center">
               {h4}
             </p>
           </div>
@@ -148,7 +148,7 @@ export function ThreeBoxes({heading, h1, box1H, box2H, box3H, h2, h3, h4}) {
             <h3 className="text-sm font-semibold text-[#2D2D2D] mb-2">
               {box3H}
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#898989] text-center">
               {h4}
             </p>
           </div>
