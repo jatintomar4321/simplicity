@@ -1252,6 +1252,12 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
+.pt-\[calc\(2rem\+1rem\)\] {
+  padding-top: calc(2rem + 1rem);
+}
+.pt-\[calc\(1rem\+1rem\)\] {
+  padding-top: calc(1rem + 1rem);
+}
 .text-left {
   text-align: left;
 }
@@ -1648,6 +1654,11 @@ body {
   .sm\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .sm\:pt-40 {

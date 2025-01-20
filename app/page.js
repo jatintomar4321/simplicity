@@ -14,7 +14,7 @@ export default function Home() {
   return (
       <>
       <Navbar />
-      <main className="pt-[calc(2rem+4rem)]"> {/* Adjust based on your navbar height */}
+      <main> {/* Adjust based on your navbar height */}
         <Hero />
         <WeOffer />
         <Banner />
